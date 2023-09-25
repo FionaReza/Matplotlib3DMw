@@ -1,0 +1,22 @@
+import matplotlib.pyplot as plt
+from mpl_toolkits.mplot3d import Axes3D 
+
+# Sample data
+names = ['Sargassum binderi, 'Padina australis', 'Padina tetrastromatica', 'Hydroclathrus clathratus', 'Dictyota dichotoma']
+Molecular Weight (Mw) X 105(gmol-1) = [0.44, 0.24, 0.52, 0.16, 0.31]
+Intrinsic Viscosity([η]) (mL/g) = [93.8855, 51.8675, 111.2986, 35.6835, 66.3337] 
+
+# Create a 3D plot
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d') 
+
+# Plot the data
+ax.scatter(Names, Molecular_Weight, Intrinsic_Viscosity) 
+
+# Set axis labels
+ax.set_xlabel('Names of Seaweeds')
+ax.set_ylabel(' Molecular Weight (Mw) X 105(gmol-1) ')
+ax.set_zlabel(' Intrinsic Viscosity([η]) (mL/g) ') 
+
+# Show the plot
+plt.show()
